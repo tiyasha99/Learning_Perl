@@ -42,6 +42,7 @@ print $lines[0][2] . "\n";
 
 foreach my $line(@lines) {
   # Now each line is an array - more precisely a reference to an array
+  # Arrow dereferences value
   print "Name:" . $line -> [0] . "\n";
   print Dumper($line) . "\n";
 
